@@ -56,7 +56,7 @@ body{
 }
 /* END HEADER */
 .container {
-  border: 2px solid #3F0C1F;
+  border: 1px solid #black;
 }
 #sub-heading{
 	color:black;
@@ -65,39 +65,26 @@ body{
 *{
 	box-sizing: border-box;
 }
-.row{
-	width: 95%;
-	border: 1px solid #3F0C1F;
-	margin: 15px;
+.container{
+	width: 100%;
+	height: 1000px;
+	border: 5px solid #000000;
 	background-color: #808080;
 	padding-top: 5px;
+	margin-bottom: 5px;
 }
 
-/********** Large devices only **********/
-@media (min-width: 1200px) {
-  .main-content {
-    height: 1100px;
+/********** Extra extra small devices only **********/
+@media (max-width: 479px) {
+  .inner-heading{
+  	width: 50%;	
+  }
+  .content{
+  	width: 50%;	
   }
 }
-/********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
-  
-  /* Home Page */
-  .container {
-    height: 558px;
-  }
-  /* End Home Page */
-}
-/********** Small devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
-  /* Home Page */
-  .container  {
-    height: 432px;
-  }
-  /* End Home Page */
-}
-/********** Extra small devices only **********/
-@media (max-width: 767px) {
+  /********** Extra small devices only **********/
+@media (max-width: 767px) and (max-width: 480px){
   /* Header */
   .navbar-brand {
     padding-top: 10px;
@@ -111,5 +98,27 @@ body{
   #collapsable-nav a { /* Collapsed nav menu text */
     font-size: 1.2em;
   }
-  /* End Header */
+  .inner-heading{
+  	width: 50%;	
+  }
+  .content{
+  	width: 50%;	
+  }
+}
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+  .container  {
+  }
+  /* End Home Page */
+}
+/********** Medium devices only **********/
+@media (min-width: 992px)  {
+  
+  /* Home Page */
+  .container {
+  }
+  /* End Home Page */
+}
+
   /* Home Page */
